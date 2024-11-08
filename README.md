@@ -12,9 +12,11 @@ For more context see below video (I claim no ownership):
 The Ni rust runtime is almost identical to that of another esoteric programming language, which contains an expletive in
 the [title](https://en.wikipedia.org/wiki/Brainfuck).
 
-Coding with Ni is about as efficient as cutting down the mightiest tree in a forrest with a herring.
+Some may say that coding with Ni is about as efficient as cutting down the mightiest tree in a forrest with a herring.
+However,
+there is an elegance to it.
 
-The runtime interpreter configures a sequential storage array of bytes that has a single data pointer that can be
+The runtime interpreter for ni configures a sequential storage array of bytes that has a single data pointer that can be
 incremented and decremented. Think of it as a long "tape" of bytes. There is also an instruction pointer that can be
 used to perform simple jumps of logic.
 Lastly, characters can be read from stdin and placed at the data pointer. They can then be written out to stdout as
@@ -59,15 +61,23 @@ Input files MUST end in either `.ni` or `.nii`.
 
 ### Debugging
 
-Set the environment variable of `NI_DEBUG=true`
+Set the environment variable of `NI_DEBUG=true`. It is false by default.
 
 ### Increase Memory Size
 
 Set the environment variable of `NI_STORAGE=1024` where the number is in bytes.
 
-# Building the Runtime
+# Building and Running the Runtime
 
-TODO
+First ensure you have rust and cargo installed on your machine. You can follow the
+standard [installation guide](https://www.rust-lang.org/tools/install).
+
+Then you can just run `cargo build -r` which will generate the release binary.  
+From there you can just run it with the `.ni` file of your choice.
+
+`./target/release/ni-runtime <file-path>.ni`
+
+Bundled executables may be released at a later date if there is enough interest.
 
 # Sample Programs
 
@@ -85,7 +95,7 @@ goes to the original creators linked below.
 - `sample-programs/sierpinski.ni`
 - Generates the magical sierpinksi triangle.
 
-# NOTICE
+# Notice
 
 I have just received word that The Knights Who Say Ni are no longer The Knights Who Say Ni. They are now The Knights
 Who Say Ekky Ekky Ekky Ekky Pitang Zoom Boing Zou Zim. As such all language development outside of
@@ -95,4 +105,3 @@ TODOS
 
 - Environment variable config.
 - Tests.
-- Building the runtime.

@@ -39,6 +39,7 @@ impl Storage {
     pub fn decrement_pointer(&mut self) {
         if self.data_pointer == 0 {
             self.write_debug("Tried to decrement pointer from empty memory, skipping");
+            return;
         }
         self.data_pointer -= 1;
     }

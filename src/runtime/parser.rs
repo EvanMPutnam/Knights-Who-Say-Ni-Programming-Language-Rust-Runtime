@@ -89,7 +89,7 @@ fn parse_str(script: &str) -> Vec<Instruction> {
 pub fn parse_input_file(file_path: &str) -> Vec<Instruction> {
     assert!(
         file_path.ends_with(".ni") || file_path.ends_with(".nii"),
-        "Ni! Use the right file extension for {}",
+        "Ni! Use the right file extension for {}.",
         file_path
     );
     let file_text = fs::read_to_string(&file_path);

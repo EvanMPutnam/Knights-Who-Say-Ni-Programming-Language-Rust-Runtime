@@ -8,10 +8,6 @@ pub struct Interpreter {
     instruction_pointer: usize,
 }
 
-// TODO - Write interpreter for the language.
-// https://martin-ueding.de/posts/creating-a-brainfuck-interpreter/
-// https://thesharperdev.com/how-to-write-a-brainfuck-interpreter-in-c/
-
 impl Interpreter {
     pub fn new(storage: Storage, instructions: Vec<Instruction>) -> Self {
         Interpreter {
@@ -30,7 +26,7 @@ impl Interpreter {
             }
             let instruction = instruction.unwrap();
             let increment_instruction = true;
-            // TODO --> Let instructions be "interface" with an exec method.
+            // TODO --> Let instructions be "interface" with an exec method?
             match instruction {
                 Instruction::IncrementDp => {
                     self.storage.increment_pointer();
