@@ -4,12 +4,15 @@ The (un)-official programming language used exclusively by the
 knights who say ni.
 
 For more context see below video (I claim no ownership):
+
 [![Ni](https://img.youtube.com/vi/zIV4poUZAQo/0.jpg)](https://www.youtube.com/watch?v=zIV4poUZAQo)
 
 # Runtime Description
 
 The Ni rust runtime is almost identical to that of another esoteric programming language, which contains an expletive in
 the [title](https://en.wikipedia.org/wiki/Brainfuck).
+
+Coding with Ni is about as efficient as cutting down the mightiest tree in a forrest with a herring.
 
 The runtime interpreter configures a sequential storage array of bytes that has a single data pointer that can be
 incremented and decremented. Think of it as a long "tape" of bytes. There is also an instruction pointer that can be
@@ -34,17 +37,18 @@ There is no support for comments.
 
 ## Example Program
 
-The following program says `Hello World!` in Ni.
+The following program outputs `A shrubbery!` in Ni.
 
 ```
-Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! Niii Ni Ni! Ni! Ni! Ni!
-Niii Ni Ni! Ni! Ni Ni! Ni! Ni! Ni Ni! Ni! Ni! Ni Ni! ni ni ni ni ni! niii
-Ni Ni! Ni Ni! Ni ni! Ni Ni Ni!
-Niii ni niii ni ni! niii Ni Ni Nii Ni ni! ni! ni!
-Nii Ni! Ni! Ni! Ni! Ni! Ni! Ni! Nii Nii Ni! Ni! Ni!
-Nii Ni Ni Nii ni ni! Nii ni Nii Ni! Ni! Ni! Nii ni! ni! ni! ni! ni! ni!
-Nii ni! ni! ni! ni! ni! ni! ni! ni! Nii Ni Ni Ni! Nii Ni Ni! Ni! Nii 
- 
+ni! ni! ni! ni! Niii ni! ni! ni! ni! Ni Ni! ni niii
+Ni Ni! Ni! Nii ni! Niii ni! ni! Ni Ni! ni niii Ni 
+Nii ni! ni! ni! Niii ni! Ni Ni! Ni! Ni! Ni! ni niii 
+Ni ni! Nii ni! ni! ni! ni! ni! ni! ni! ni! ni! ni! ni! 
+Nii Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! Nii Ni! 
+Ni! Ni! Nii Ni! Niii ni! Ni Ni! Ni! Ni! ni niii Ni Nii 
+Nii Ni! Ni! Ni! Nii Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! Ni! 
+Ni! Ni! Ni! Ni! Nii Ni! Ni! Ni! Ni! Ni! Ni! Ni! Nii ni! 
+Niii ni! ni! ni! ni! Ni Ni! ni niii Ni Ni! Ni! Ni! Nii 
 ```
 
 ## Files
@@ -60,6 +64,10 @@ Set the environment variable of `NI_DEBUG=true`
 ### Increase Memory Size
 
 Set the environment variable of `NI_STORAGE=1024` where the number is in bytes.
+
+# Building the Runtime
+
+TODO
 
 # Sample Programs
 
@@ -77,7 +85,14 @@ goes to the original creators linked below.
 - `sample-programs/sierpinski.ni`
 - Generates the magical sierpinksi triangle.
 
+# NOTICE
+
+I have just received word that The Knights Who Say Ni are no longer The Knights Who Say Ni. They are now The Knights
+Who Say Ekky Ekky Ekky Ekky Pitang Zoom Boing Zou Zim. As such all language development outside of
+bug fixes will be halted.
+
 TODOS
 
 - Environment variable config.
-- Tests
+- Tests.
+- Building the runtime.
