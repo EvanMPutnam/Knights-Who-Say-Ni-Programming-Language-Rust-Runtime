@@ -100,8 +100,3 @@ goes to the original creators linked below.
 I have just received word that The Knights Who Say Ni are no longer The Knights Who Say Ni. They are now The Knights
 Who Say Ekky Ekky Ekky Ekky Pitang Zoom Boing Zou Zim. As such all language development outside of
 bug fixes will be halted.
-
-TODOS
-
-- Environment variable config.
-- Tests.
