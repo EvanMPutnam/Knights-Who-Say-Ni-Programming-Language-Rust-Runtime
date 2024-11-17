@@ -86,6 +86,7 @@ fn parse_str(script: &str) -> Vec<Instruction> {
     validate_instructions(&instructions);
     instructions
 }
+
 pub fn parse_input_file(file_path: &str) -> Vec<Instruction> {
     assert!(
         file_path.ends_with(".ni") || file_path.ends_with(".nii"),
